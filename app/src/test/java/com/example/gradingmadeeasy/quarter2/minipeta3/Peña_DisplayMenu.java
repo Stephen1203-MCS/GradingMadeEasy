@@ -7,6 +7,7 @@ import java.io.File;
 
 public class Peña_DisplayMenu {
 
+
     static Boolean Teacher = false;
     static Boolean Login = false;
     static Scanner InputScanner = new Scanner(System.in); //Declare scan
