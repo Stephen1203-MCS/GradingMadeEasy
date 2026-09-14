@@ -23,7 +23,9 @@ public class Espinosa_register {
 
             if (Teacher) {
                 Role = "Teacher";
-            }Int AccountId = java.untyil
+            }
+
+            Int Account = null;
         }
     }
 }
