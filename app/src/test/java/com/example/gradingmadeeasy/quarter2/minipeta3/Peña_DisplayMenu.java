@@ -15,6 +15,7 @@ public class Peña_DisplayMenu {
         System.out.println("Do you want to login?: [True = Login or False = Register]");
         Boolean LoginOrNot = InputScanner.nextBoolean();
 
+
         if (LoginOrNot) {
             Login = true;
         }
