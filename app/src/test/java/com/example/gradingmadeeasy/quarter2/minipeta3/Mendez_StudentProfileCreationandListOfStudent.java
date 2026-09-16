@@ -1,6 +1,6 @@
 package com.example.gradingmadeeasy.quarter2.minipeta3;
 
-public class Mendez_StsudentProfileCreationandListOfStudent {
+public class Mendez_StudentProfileCreationandListOfStudent {
     //Create an array that will hold the students
     //Create a Student profile
     String SectionName = null;
