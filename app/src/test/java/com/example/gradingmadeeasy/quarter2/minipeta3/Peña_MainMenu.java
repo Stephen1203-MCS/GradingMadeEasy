@@ -25,7 +25,7 @@ public class Peña_MainMenu {
         PrintlnShortcut("3 = Check all current sections");
         PrintlnShortcut("4 = Main Menu");
         PrintlnShortcut("5 = Exit");
-
+        PrintlnShortcut("==========================");
         while (currentlyRunning == true){
 
             int choice = inputScanner.nextInt();
