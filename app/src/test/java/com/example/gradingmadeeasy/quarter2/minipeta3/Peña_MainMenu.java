@@ -19,6 +19,7 @@ public class Peña_MainMenu {
         Malonzo_Settings checkSettings = new Malonzo_Settings();
         Espinosa_SectionCreation sectionCreation = new Espinosa_SectionCreation();
 
+        PrintlnShortcut("==========================");
         PrintlnShortcut("Welcome to the Main Menu");
         PrintlnShortcut("1 = Settings");
         PrintlnShortcut("2 = To create a section");
@@ -38,12 +39,14 @@ public class Peña_MainMenu {
             } else if (choice == 3){
                 checkCurrentSections.CheckSections();
             } else if (choice == 4){
+                PrintlnShortcut("==========================");
                 PrintlnShortcut("Welcome to the Main Menu");
 
                 PrintlnShortcut("1 = Main Menu");
                 PrintlnShortcut("2 = To create a section");
                 PrintlnShortcut("3 = Check all current sections");
                 PrintlnShortcut("4 = Settings");
+                PrintlnShortcut("==========================");
             } else {
                 currentlyRunning = false;
                 PrintlnShortcut("EXITED");
