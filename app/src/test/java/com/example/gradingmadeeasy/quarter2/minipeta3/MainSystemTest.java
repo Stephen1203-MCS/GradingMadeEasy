@@ -25,21 +25,25 @@ public class MainSystemTest {
          * Think of this as a customer making 3 different orders or transactions.
          */
         int interactionCount = 1;
-        while (interactionCount <= 3) {
+        while (interactionCount <= 5) {
             System.out.println("Generating inputs for interaction #" + interactionCount);
 
             if (interactionCount == 1) {
-                // Simulating the user typing '1' and pressing ENTER.
+                // Simulating the user typing '1' checking settings.
                 // IMPORTANT: The "\n" represents pressing the Enter key!
                 simulatedUserInput.append("1\n");
             } else if (interactionCount == 2) {
-                // Simulating the user choosing option '2', then typing '300'
+                // Simulating the user choosing option '2', then create a section
                 simulatedUserInput.append("2\n");
-                simulatedUserInput.append("300\n");
+            } else if (interactionCount == 3) {
+                // Simulating the user choosing option '3', and checking for section
+                simulatedUserInput.append("3\n");
+            } else if (interactionCount == 4) {
+                // Simulating the user choosing option '4', then going back to the Main Menu
+                simulatedUserInput.append("4\n");
             } else {
-                // Simulating the user choosing option '2', then typing '5000'
-                simulatedUserInput.append("2\n");
-                simulatedUserInput.append("5000\n");
+                // Simulating the user choosing option '5', then exiting the app
+                simulatedUserInput.append("5\n");
             }
             interactionCount++;
         }
