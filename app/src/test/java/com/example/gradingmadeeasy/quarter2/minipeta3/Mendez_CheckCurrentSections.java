@@ -1,9 +1,16 @@
 package com.example.gradingmadeeasy.quarter2.minipeta3;
 
 public class Mendez_CheckCurrentSections {
-    //Check the array if the user has a section, if there are none print "null". If sections are present. print the sections
     String[] Sections = {};
-    public void CheckSections(){
 
+    public void CheckSections() {
+        if (Sections.length == 0) {
+            System.out.println("null");
+        } else {
+            for (String section : Sections) {
+                System.out.println(section);
+            }
+        }
     }
 }
+
