@@ -10,6 +10,11 @@ public class Peña_FastFoodMenu {
     Peña_MealCombos ComboMeals = new Peña_MealCombos();
 
     public void start(Scanner inputScanner){
-        //
+        boolean isRunning = true;
+
+        while (isRunning){
+
+        }
+
     }
 }
