@@ -8,7 +8,6 @@ import com.example.gradingmadeeasy.quarter2.practicalexam.PeñaPackagesForExam.P
 
 
 public class FastFoodTest {
-
     @Test
     public void testFastFoodFlow() {
         StringBuilder automatedInput = new StringBuilder();
