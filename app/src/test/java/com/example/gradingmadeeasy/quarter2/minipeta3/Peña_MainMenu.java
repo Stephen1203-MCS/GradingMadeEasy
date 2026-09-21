@@ -8,6 +8,7 @@ import java.util.Scanner;
 import com.example.gradingmadeeasy.quarter2.minipeta3.Mendez_CheckCurrentSections;
 import com.example.gradingmadeeasy.quarter2.minipeta3.Malonzo_Settings;
 import com.example.gradingmadeeasy.quarter2.minipeta3.Espinosa_SectionCreation;
+
 public class Peña_MainMenu {
     public static void PrintlnShortcut(Object Text) {
         System.out.println(Text);
@@ -33,9 +34,10 @@ public class Peña_MainMenu {
             PrintlnShortcut(choice);
 
             if (choice == 1){
-                checkSettings.Settings();
+                checkSettings.Settings(inputScanner);
             } else if (choice == 2){
-                sectionCreation.CreateSection();
+                inputScanner.nextLine();
+                sectionCreation.CreateSection(inputScanner);
             } else if (choice == 3){
                 checkCurrentSections.CheckSections();
             } else if (choice == 4){
@@ -47,8 +49,7 @@ public class Peña_MainMenu {
                 PrintlnShortcut("3 = Check all current sections");
                 PrintlnShortcut("4 = Settings");
                 PrintlnShortcut("==========================");
-            } else {
-                currentlyRunning = false;
+            } else if (choice == 5) {
                 PrintlnShortcut("EXITED");
                 break;
             }
