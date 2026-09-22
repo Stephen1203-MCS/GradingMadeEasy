@@ -18,13 +18,13 @@ public class Peña_FastFoodMenu {
 
         while (isRunning){
             if (currentChoice == 1) {//order burger
-
+                SoloMeals.ChooseSoloMeals(inputScanner);
             } else if (currentChoice == 2) { //order fries
-
+                SoloMeals.ChooseSoloMeals(inputScanner);
             } else if (currentChoice == 3) { //exit the menu
-
+                break;
             } else { //catch the invalid input
-
+                System.out.println("INVALID INPUT, PLEASE TRY AGAIN.");
             }
 
         }
