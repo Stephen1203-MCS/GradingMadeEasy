@@ -37,7 +37,7 @@ public class Peña_MainMenu {
                 checkSettings.Settings(inputScanner);
             } else if (choice == 2){
                 inputScanner.nextLine();
-                sectionCreation.CreateSection(inputScanner);
+                sectionCreation.CreateSection();
             } else if (choice == 3){
                 checkCurrentSections.CheckSections();
             } else if (choice == 4){
