@@ -13,15 +13,17 @@ public class Peña_FastFoodMenu {
 
         System.out.println("Menu");
 
-        int currentChoice = inputScanner.nextInt();
-        System.out.println(currentChoice); //print out the choice for the user, for debugging purposes
-
         while (isRunning){
+            int currentChoice = inputScanner.nextInt();
+            System.out.println(currentChoice); //print out the choice for the user, for debugging purposes
+
             if (currentChoice == 1) {//order burger
                 SoloMeals.ChooseSoloMeals(inputScanner);
             } else if (currentChoice == 2) { //order fries
                 SoloMeals.ChooseSoloMeals(inputScanner);
             } else if (currentChoice == 3) { //exit the menu
+                System.out.println("Thank you for ordering with us");
+                isRunning = false;
                 break;
             } else { //catch the invalid input
                 System.out.println("INVALID INPUT, PLEASE TRY AGAIN.");
