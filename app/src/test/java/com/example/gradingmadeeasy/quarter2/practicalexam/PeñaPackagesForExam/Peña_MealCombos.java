@@ -5,6 +5,7 @@ public class Peña_MealCombos {
     public void ChooseMealCombos(Scanner inputScanner, String mealName){
         int currentChoice = inputScanner.nextInt();
 
+        System.out.println(currentChoice + " <- User Input");
         if (currentChoice == 1) { //question for comboMeals
             System.out.println("Upgraded to meal combo!"); //yes
         } else {
