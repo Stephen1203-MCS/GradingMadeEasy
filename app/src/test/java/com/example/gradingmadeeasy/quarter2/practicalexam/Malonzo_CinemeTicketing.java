@@ -1,10 +1,8 @@
 package com.example.sampleapplicationfordemo.quarter2.practicalexam;
 
-   import org.junit.Test;
-   import java.io.ByteArrayInputStream;
    import java.util.Scanner;
 
-   public class CinemaTicketingTest {
+   public class Malonzo_SnackbarMenu {
     @Test
     public void testCinemaFlow() {
         StringBuilder automatedInput = new StringBuilder();
