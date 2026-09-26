@@ -32,9 +32,13 @@ public class MainSystemTest {
                 // Simulating the user typing '1' checking settings.
                 // IMPORTANT: The "\n" represents pressing the Enter key!
                 simulatedUserInput.append("1\n");
+                int randomNum = (int)(Math.random() * 3);
+                simulatedUserInput.append(randomNum);
+                simulatedUserInput.append("\n");
             } else if (interactionCount == 2) {
                 // Simulating the user choosing option '2', then create a section
                 simulatedUserInput.append("2\n");
+                simulatedUserInput.append("St. Isidore of Seville\n");
             } else if (interactionCount == 3) {
                 // Simulating the user choosing option '3', and checking for section
                 simulatedUserInput.append("3\n");

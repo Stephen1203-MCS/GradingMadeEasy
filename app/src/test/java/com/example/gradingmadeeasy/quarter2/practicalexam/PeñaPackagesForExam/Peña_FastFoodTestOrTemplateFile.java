@@ -1,13 +1,11 @@
-package com.example.gradingmadeeasy.quarter2.practicalexam;
+package com.example.gradingmadeeasy.quarter2.practicalexam.PeñaPackagesForExam;
 
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
-import com.example.gradingmadeeasy.quarter2.practicalexam.PeñaPackagesForExam.Peña_FastFoodMenu;
 
-
-public class FastFoodTest {
+public class Peña_FastFoodTestOrTemplateFile {
     @Test
     public void testFastFoodFlow() {
         StringBuilder automatedInput = new StringBuilder();
