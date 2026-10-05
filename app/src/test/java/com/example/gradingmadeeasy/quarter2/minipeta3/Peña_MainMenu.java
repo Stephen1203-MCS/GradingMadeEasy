@@ -1,6 +1,13 @@
 package com.example.gradingmadeeasy.quarter2.minipeta3;
+import android.content.Context;
+import android.content.Intent;
 
+import java.util.Objects;
 import java.util.Scanner;
+
+import com.example.gradingmadeeasy.quarter2.minipeta3.Mendez_CheckCurrentSections;
+import com.example.gradingmadeeasy.quarter2.minipeta3.Malonzo_Settings;
+import com.example.gradingmadeeasy.quarter2.minipeta3.Espinosa_SectionCreation;
 
 public class Peña_MainMenu {
     public static void PrintlnShortcut(Object Text) {
