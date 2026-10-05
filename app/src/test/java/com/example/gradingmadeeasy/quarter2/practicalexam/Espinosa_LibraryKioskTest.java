@@ -9,9 +9,9 @@ public ;class Espinosa_LibraryKioskTest {
         LibrarySystem library = new LibrarySystem();
         boolean running = true;
 
-        System.out.println("==================================");
-        System.out.println("     LIBRARY KIOSK: MAIN MENU     ");
-        System.out.println("==================================");
+        System.out.println("=======================================");
+        System.out.println("       LIBRARY KIOSK: MAIN MENU        ");
+        System.out.println("=======================================");
 
         while (running) {
             // Display Menu Options matching the image
