@@ -1,8 +1,8 @@
-package com.example.gradingmadeeasy.quarter2.practicalexam;
+package com.example.sampleapplicationfordemo.quarter2.practicalexam;
 
-import java.util.;
+import java.util.;package
 
-public class CinemeSeatBooking {
+public class CinemaSeatBooking {
 
     static final int ROWS = 8;          // A - H
     static final int COLS = 10;         // 1 - 10
@@ -113,7 +113,7 @@ public class CinemeSeatBooking {
     }
 
     static void checkout(List<String> selected) {
-        System.out.println("\n=========================================");
+        System.out.println("=========================================");
         System.out.println("              BOOKING SUMMARY");
         System.out.println("=========================================");
 
