@@ -1,4 +1,4 @@
-package com.example.sampleapplicationfordemo.quarter2.practicalexam;
+package quarter2.practicalexam;
 
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
@@ -34,7 +34,8 @@ public class Malonzo_SnackbarMenu {
 
         Scanner scanner = new Scanner(inputStream);
 
-        CinemaMenu cinemaSystem = new CinemaMenu();
+        Malonzo_SnackbarMenu cinemaSystem;
+        cinemaSystem = new Malonzo_SnackbarMenu();
 
         cinemaSystem.start(scanner);
     }
