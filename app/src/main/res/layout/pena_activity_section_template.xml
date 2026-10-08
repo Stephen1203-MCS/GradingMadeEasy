@@ -7,4 +7,206 @@
     android:layout_height="match_parent"
     tools:context=".SectionTemplate">
 
+    <ScrollView
+        android:id="@+id/scrollViewOfStudents"
+        android:layout_width="415dp"
+        android:layout_height="726dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="27dp"
+        android:background="#f1ffec"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#324321"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/WorkHolderScroll"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rounded_bg"
+                android:backgroundTint="#1e271b"
+                android:translationZ="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/work1"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:backgroundTint="#576D54"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="1" />
+
+                    <Button
+                        android:id="@+id/addWork_Placeholder2"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:backgroundTint="#576D54"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="+" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/viewBoxColorGreenTop"
+        android:layout_width="412dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="419dp"
+        android:background="#546c4c"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/viewBoxColorGreenBottom"
+        android:layout_width="413dp"
+        android:layout_height="64dp"
+        android:background="#546c4c"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/viewBoxColorGreenInsideBottom"
+        android:layout_width="395dp"
+        android:layout_height="51dp"
+        android:background="#6E8966"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991" />
+
+
+    <View
+        android:id="@+id/viewBoxColorGreenInsideTop"
+        android:layout_width="387dp"
+        android:layout_height="92dp"
+        android:background="#6E8966"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <TextView
+        android:id="@+id/sectionInformation_GradingSystemInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="485dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="#839d7a"
+        android:text="Grading System: Weighted Category"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
+
+    <TextView
+        android:id="@+id/sectionInformationBottom_Section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="467dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="#839d7a"
+        android:text="Current Section: St. Isidore of Seville"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="138dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="274dp"
+        android:layout_marginTop="466dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="#1e271b"
+        android:text="Update Grades"
+        android:textSize="11sp"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986" />
+
+    <HorizontalScrollView
+        android:id="@+id/CategoryHolder"
+        android:layout_width="323dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="426dp"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="#1e271b"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </HorizontalScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
