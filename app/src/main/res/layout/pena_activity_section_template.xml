@@ -7,6 +7,67 @@
     android:layout_height="match_parent"
     tools:context=".SectionTemplate">
 
+    <TextView
+        android:id="@+id/quarterOrSemesterHolder"
+        android:layout_width="121dp"
+        android:layout_height="21dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="#546c4c"
+        android:text="Quarters"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:translationZ="5dp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <HorizontalScrollView
+        android:id="@+id/currentQuarters"
+        android:layout_width="146dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="426dp"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="#1e271b"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="Horizontal">
+
+            <Button
+                android:id="@+id/quarter1Button"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#576D54"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/addCategory2"
+                android:layout_width="52dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#576D54"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="+" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
     <ScrollView
         android:id="@+id/scrollViewOfStudents"
         android:layout_width="415dp"
@@ -23,23 +84,25 @@
         app:layout_constraintVertical_bias="0.472">
 
         <LinearLayout
+            android:id="@+id/layoutForListOfStudents"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="300dp"
             android:background="#324321"
             android:orientation="vertical">
 
             <HorizontalScrollView
                 android:id="@+id/WorkHolderScroll"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_width="350dp"
+                android:layout_height="32dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="30dp"
+                android:layout_marginEnd="50dp"
                 android:background="@drawable/rounded_bg"
                 android:backgroundTint="#1e271b"
                 android:translationZ="5dp">
 
                 <LinearLayout
+                    android:id="@+id/linearLayoutForWorkholder"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
@@ -55,7 +118,17 @@
                         android:text="1" />
 
                     <Button
-                        android:id="@+id/addWork_Placeholder2"
+                        android:id="@+id/overall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:backgroundTint="#576D54"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="overall" />
+
+                    <Button
+                        android:id="@+id/addWork"
                         android:layout_width="40dp"
                         android:layout_height="match_parent"
                         android:layout_margin="1dp"
@@ -65,6 +138,75 @@
                         android:text="+" />
                 </LinearLayout>
             </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/WorkholderTextIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="STUDENT WORKS"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/borderForStudentListTextHolder_STUDENT"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_bg"
+                android:backgroundTint="#546c4c"
+                android:text="STUDENT            SCORE"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:id="@+id/StudentInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/studentNameInput"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:background="@drawable/rounded_bg"
+                    android:backgroundTint="#1e271b"
+                    android:hint="Student name"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#AAAAAA" />
+
+                <EditText
+                    android:id="@+id/studentScoreInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_bg"
+                    android:backgroundTint="#1e271b"
+                    android:hint="Student Score"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#AAAAAA" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addStudentInformation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#576D54"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="+" />
 
 
         </LinearLayout>
@@ -113,8 +255,8 @@
 
     <View
         android:id="@+id/viewBoxColorGreenInsideTop"
-        android:layout_width="387dp"
-        android:layout_height="92dp"
+        android:layout_width="399dp"
+        android:layout_height="95dp"
         android:background="#6E8966"
         android:translationZ="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -122,7 +264,7 @@
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintVertical_bias="0.011" />
 
     <TextView
         android:id="@+id/sectionInformation_GradingSystemInformation"
@@ -186,9 +328,9 @@
         app:layout_constraintVertical_bias="0.986" />
 
     <HorizontalScrollView
-        android:id="@+id/CategoryHolder"
-        android:layout_width="323dp"
-        android:layout_height="22dp"
+        android:id="@+id/currentCategoryHolder"
+        android:layout_width="320dp"
+        android:layout_height="28dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="30dp"
@@ -203,10 +345,55 @@
         app:layout_constraintVertical_bias="0.013">
 
         <LinearLayout
+            android:id="@+id/linearLayoutForCategories"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical" />
+            android:orientation="Horizontal">
+
+            <Button
+                android:id="@+id/currentCategory"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:backgroundTint="#576D54"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="ICT" />
+
+            <Button
+                android:id="@+id/addCategory"
+                android:layout_width="52dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:backgroundTint="#576D54"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="+" />
+
+        </LinearLayout>
     </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="40dp"
+        android:layout_height="53dp"
+        android:text="X"
+        android:backgroundTint="#576D54"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:translationZ="2dp"
+        app:srcCompat="@drawable/GradingMadeEasyLogo"
+        tools:layout_editor_absoluteX="330dp"
+        tools:layout_editor_absoluteY="9dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
