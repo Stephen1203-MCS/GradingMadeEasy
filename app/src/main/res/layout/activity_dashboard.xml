@@ -29,8 +29,8 @@
         android:id="@+id/textView8"
         android:layout_width="417dp"
         android:layout_height="725dp"
-        android:background="#AADCAA"
-        tools:layout_editor_absoluteX="-7dp"
+        android:background="#7AA07A"
+        tools:layout_editor_absoluteX="-5dp"
         tools:layout_editor_absoluteY="93dp" />
 
     <TextView
@@ -45,8 +45,7 @@
         android:id="@+id/textView11"
         android:layout_width="84dp"
         android:layout_height="39dp"
-        android:text="Search
-"
+        android:text="Search"
         android:textSize="25dp"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="110dp" />
@@ -55,7 +54,7 @@
         android:id="@+id/textView12"
         android:layout_width="30dp"
         android:layout_height="31dp"
-        android:background="#87ED87"
+        android:background="#3A3A3A"
         tools:layout_editor_absoluteX="360dp"
         tools:layout_editor_absoluteY="112dp" />
 
@@ -76,6 +75,16 @@
         android:textSize="25dp"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="179dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#576d54"
+        android:text="-"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="250dp" />
 
     <Button
         android:id="@+id/button4"
@@ -118,9 +127,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sections"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="152dp" />
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="149dp" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -154,9 +163,53 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="add section?"
         android:textSize="15dp"
         tools:layout_editor_absoluteX="9dp"
         tools:layout_editor_absoluteY="159dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete section"
+        android:textSize="13dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="235dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add section"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="165dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="369dp"
+        android:layout_height="19dp"
+        android:background="#898989"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="83dp"
+        android:layout_height="18dp"
+        android:background="#5B5B5B"
+        android:text="you are here"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="slide bar"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="304dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
