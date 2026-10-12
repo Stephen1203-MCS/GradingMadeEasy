@@ -23,14 +23,14 @@
         android:layout_height="77dp"
         android:background="#576D54"
         tools:layout_editor_absoluteX="-15dp"
-        tools:layout_editor_absoluteY="656dp" />
+        tools:layout_editor_absoluteY="816dp" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="410dp"
-        android:layout_height="575dp"
+        android:layout_width="417dp"
+        android:layout_height="725dp"
         android:background="#AADCAA"
-        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteX="-7dp"
         tools:layout_editor_absoluteY="93dp" />
 
     <TextView
@@ -45,7 +45,9 @@
         android:id="@+id/textView11"
         android:layout_width="84dp"
         android:layout_height="39dp"
-        android:text="Search Section"
+        android:text="Search
+"
+        android:textSize="25dp"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="110dp" />
 
@@ -71,6 +73,7 @@
         android:layout_height="55dp"
         android:backgroundTint="#576d54"
         android:text="+"
+        android:textSize="25dp"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="179dp" />
 
@@ -80,8 +83,19 @@
         android:layout_height="55dp"
         android:backgroundTint="#767676"
         android:text="Section 1"
+        android:textSize="18dp"
         tools:layout_editor_absoluteX="101dp"
         tools:layout_editor_absoluteY="179dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#767676"
+        android:text="Section 3"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="249dp" />
 
     <TextView
         android:id="@+id/textView17"
@@ -104,8 +118,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sections"
+        android:textSize="20dp"
         tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="160dp" />
+        tools:layout_editor_absoluteY="152dp" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -114,5 +129,34 @@
         app:srcCompat="@drawable/GradingMadeEasyLogo"
         tools:layout_editor_absoluteX="-8dp"
         tools:layout_editor_absoluteY="-15dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="134dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#767676"
+        android:text="Section 2"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="134dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#767676"
+        android:text="Section 4"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add section?"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="159dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
