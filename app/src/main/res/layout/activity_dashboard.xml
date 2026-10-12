@@ -5,6 +5,23 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dashboard">
+    android:background="#5C7358"
+    android:backgroundTint="@color/white"
+    tools:context=".Dashboard" >
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="412dp"
+        android:layout_height="78dp"
+        android:background="#576D54"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="91dp"
+        android:layout_height="99dp"
+        app:srcCompat="@drawable/GradingMadeEasyLogo"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-10dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
