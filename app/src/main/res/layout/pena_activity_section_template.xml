@@ -70,8 +70,8 @@
 
     <ScrollView
         android:id="@+id/scrollViewOfStudents"
-        android:layout_width="410dp"
-        android:layout_height="698dp"
+        android:layout_width="413dp"
+        android:layout_height="693dp"
         android:layout_marginEnd="2dp"
         android:background="#f1ffec"
         app:layout_constraintBottom_toTopOf="@+id/viewBoxColorGreenBottom"
@@ -197,8 +197,8 @@
 
             <Button
                 android:id="@+id/addStudentInformation"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="430dp"
+                android:layout_height="46dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
                 android:backgroundTint="#576D54"
@@ -212,8 +212,8 @@
 
     <View
         android:id="@+id/viewBoxColorGreenTop"
-        android:layout_width="409dp"
-        android:layout_height="132dp"
+        android:layout_width="414dp"
+        android:layout_height="130dp"
         android:layout_marginBottom="419dp"
         android:background="#546c4c"
         android:translationZ="2dp"
