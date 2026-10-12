@@ -2,23 +2,33 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#576D54"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#576D54">
 
     <ImageView
         android:id="@+id/AppIconSectionCreation"
         android:layout_width="138dp"
         android:layout_height="113dp"
+        android:layout_marginStart="257dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="766dp"
         android:translationZ="2dp"
-        app:srcCompat="@drawable/GradingMadeEasyLogo"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="12dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/GradingMadeEasyLogo" />
 
     <EditText
         android:id="@+id/sectionName"
         android:layout_width="378dp"
         android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="630dp"
         android:background="@drawable/rounded_bg"
         android:backgroundTint="#1e271b"
         android:text="Put your section name"
@@ -26,13 +36,19 @@
         android:textColor="@color/white"
         android:textSize="30sp"
         android:translationZ="2dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="206dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/sectionDetailsHeader"
         android:layout_width="335dp"
         android:layout_height="24dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="685dp"
         android:background="@drawable/evenmorerounded_bg"
         android:backgroundTint="#1e271b"
         android:text="Section Name:"
@@ -40,22 +56,34 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:translationZ="2dp"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="182dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/viewContainterForSectionCreationAndChoosingOfGradingSystem"
         android:layout_width="379dp"
         android:layout_height="835dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/evenmorerounded_bg"
         android:backgroundTint="#7F8A77"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textForGradingSystems"
         android:layout_width="222dp"
         android:layout_height="33dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="562dp"
         android:background="@drawable/evenmorerounded_bg"
         android:backgroundTint="#1e271b"
         android:text="Grading Systems"
@@ -63,13 +91,19 @@
         android:textColor="@color/white"
         android:textSize="25dp"
         android:translationZ="2dp"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="296dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/formulaShownForTheGradingSystem"
         android:layout_width="222dp"
         android:layout_height="33dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="571dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="287dp"
         android:background="@drawable/evenmorerounded_bg"
         android:backgroundTint="#1e271b"
         android:text="Formula Used"
@@ -77,40 +111,60 @@
         android:textColor="@color/white"
         android:textSize="25dp"
         android:translationZ="2dp"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="571dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/formulaTextBox"
         android:layout_width="313dp"
         android:layout_height="112dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="621dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="158dp"
         android:background="@drawable/evenmorerounded_bg"
         android:backgroundTint="#1e271b"
-        android:text="Example Formula = TotalPoints / Student Scores etc. etc."
+        android:text="Example Formula = TotalPoints / Student Scores"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="25dp"
         android:translationZ="2dp"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="621dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/createSectionDetailsButton"
         android:layout_width="174dp"
         android:layout_height="99dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="453dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="339dp"
         android:backgroundTint="#374731"
         android:text="CREATE SECTION"
         android:textSize="30dp"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="453dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
         android:id="@+id/radioGroupForGradingSystems"
         android:layout_width="332dp"
         android:layout_height="95dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="343dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="453dp"
         android:translationZ="1dp"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="343dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
             android:id="@+id/radioButton_SumOfAllScores"
@@ -135,25 +189,41 @@
     </RadioGroup>
 
     <View
-        android:id="@+id/bottomView"
+        android:id="@+id/bottomViewSectionCreation"
         android:layout_width="375dp"
         android:layout_height="91dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="761dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="39dp"
         android:background="#1e271b"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="761dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/bottomView2"
+        android:id="@+id/topViewSectionCreation"
         android:layout_width="379dp"
         android:layout_height="109dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="751dp"
         android:background="#1e271b"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/exitButtonForSectionCreation"
         android:layout_width="81dp"
         android:layout_height="84dp"
+        android:layout_marginEnd="330dp"
+        android:layout_marginBottom="807dp"
         android:backgroundTint="#576D54"
         android:text="X"
         android:textSize="20dp"
