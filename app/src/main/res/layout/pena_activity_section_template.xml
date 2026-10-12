@@ -9,8 +9,12 @@
 
     <TextView
         android:id="@+id/quarterOrSemesterHolder"
-        android:layout_width="121dp"
-        android:layout_height="21dp"
+        android:layout_width="@dimen/_85sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginBottom="854dp"
         android:layout_weight="1"
         android:background="@drawable/rounded_bg"
         android:backgroundTint="#546c4c"
@@ -18,17 +22,19 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:translationZ="5dp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <HorizontalScrollView
         android:id="@+id/currentQuarters"
-        android:layout_width="146dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="426dp"
+        android:layout_width="@dimen/_146sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_426sdp"
         android:background="@drawable/rounded_bg"
         android:backgroundTint="#1e271b"
         android:translationZ="5dp"
@@ -42,11 +48,11 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="Horizontal">
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/quarter1Button"
-                android:layout_width="40dp"
+                android:layout_width="@dimen/_48sdp"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
@@ -57,7 +63,7 @@
 
             <Button
                 android:id="@+id/addCategory2"
-                android:layout_width="52dp"
+                android:layout_width="@dimen/_52sdp"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
@@ -70,8 +76,8 @@
 
     <ScrollView
         android:id="@+id/scrollViewOfStudents"
-        android:layout_width="413dp"
-        android:layout_height="693dp"
+        android:layout_width="@dimen/_316sdp"
+        android:layout_height="@dimen/_500sdp"
         android:layout_marginEnd="2dp"
         android:background="#f1ffec"
         app:layout_constraintBottom_toTopOf="@+id/viewBoxColorGreenBottom"
@@ -84,14 +90,14 @@
         <LinearLayout
             android:id="@+id/layoutForListOfStudents"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="@dimen/_300sdp"
             android:background="#324321"
             android:orientation="vertical">
 
             <HorizontalScrollView
                 android:id="@+id/WorkHolderScroll"
-                android:layout_width="350dp"
-                android:layout_height="32dp"
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="@dimen/_30sdp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="50dp"
@@ -107,7 +113,7 @@
 
                     <Button
                         android:id="@+id/work1"
-                        android:layout_width="35dp"
+                        android:layout_width="@dimen/_30sdp"
                         android:layout_height="match_parent"
                         android:layout_margin="1dp"
                         android:backgroundTint="#576D54"
@@ -127,7 +133,7 @@
 
                     <Button
                         android:id="@+id/addWork"
-                        android:layout_width="40dp"
+                        android:layout_width="@dimen/_40sdp"
                         android:layout_height="match_parent"
                         android:layout_margin="1dp"
                         android:backgroundTint="#576D54"
@@ -149,7 +155,7 @@
             <TextView
                 android:id="@+id/borderForStudentListTextHolder_STUDENT"
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="@dimen/_36sdp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_bg"
                 android:backgroundTint="#546c4c"
@@ -161,7 +167,7 @@
             <LinearLayout
                 android:id="@+id/StudentInformation"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/_50ssp"
                 android:orientation="horizontal">
 
                 <EditText
@@ -181,7 +187,7 @@
                 <EditText
                     android:id="@+id/studentScoreInput"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="4dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_bg"
@@ -197,8 +203,8 @@
 
             <Button
                 android:id="@+id/addStudentInformation"
-                android:layout_width="430dp"
-                android:layout_height="46dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
                 android:backgroundTint="#576D54"
@@ -212,8 +218,8 @@
 
     <View
         android:id="@+id/viewBoxColorGreenTop"
-        android:layout_width="414dp"
-        android:layout_height="130dp"
+        android:layout_width="@dimen/_320sdp"
+        android:layout_height="@dimen/_130sdp"
         android:layout_marginBottom="419dp"
         android:background="#546c4c"
         android:translationZ="2dp"
@@ -226,8 +232,8 @@
 
     <View
         android:id="@+id/viewBoxColorGreenBottom"
-        android:layout_width="413dp"
-        android:layout_height="64dp"
+        android:layout_width="@dimen/_3sdp"
+        android:layout_height="@dimen/_52sdp"
         android:background="#546c4c"
         android:translationZ="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -239,8 +245,8 @@
 
     <View
         android:id="@+id/viewBoxColorGreenInsideBottom"
-        android:layout_width="395dp"
-        android:layout_height="51dp"
+        android:layout_width="@dimen/_305sdp"
+        android:layout_height="@dimen/_40sdp"
         android:background="#6E8966"
         android:translationZ="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -253,8 +259,8 @@
 
     <View
         android:id="@+id/viewBoxColorGreenInsideTop"
-        android:layout_width="399dp"
-        android:layout_height="114dp"
+        android:layout_width="@dimen/_305sdp"
+        android:layout_height="@dimen/_115sdp"
         android:background="#6E8966"
         android:translationZ="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -327,8 +333,8 @@
 
     <HorizontalScrollView
         android:id="@+id/currentCategoryHolder"
-        android:layout_width="320dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="30dp"
@@ -346,11 +352,11 @@
             android:id="@+id/linearLayoutForCategories"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="Horizontal">
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/currentCategory"
-                android:layout_width="125dp"
+                android:layout_width="@dimen/_50sdp"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:backgroundTint="#576D54"
@@ -360,7 +366,7 @@
 
             <Button
                 android:id="@+id/addCategory"
-                android:layout_width="52dp"
+                android:layout_width="@dimen/_48sdp"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:backgroundTint="#576D54"
@@ -373,10 +379,10 @@
 
     <Button
         android:id="@+id/exit"
-        android:layout_width="40dp"
-        android:layout_height="53dp"
-        android:text="X"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_35sdp"
         android:backgroundTint="#576D54"
+        android:text="X"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -386,8 +392,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="85dp"
-        android:layout_height="70dp"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
         android:translationZ="2dp"
         app:srcCompat="@drawable/GradingMadeEasyLogo"
         tools:layout_editor_absoluteX="330dp"
