@@ -5,16 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#253117"
     tools:context=".SectionTemplate">
+
 
     <TextView
         android:id="@+id/quarterOrSemesterHolder"
         android:layout_width="@dimen/_85sdp"
-        android:layout_height="@dimen/_15sdp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="244dp"
-        android:layout_marginBottom="854dp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="262dp"
         android:layout_weight="1"
         android:background="@drawable/rounded_bg"
         android:backgroundTint="#546c4c"
@@ -22,15 +23,33 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/categoryNameView"
+        android:layout_width="@dimen/_85sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="262dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="#546c4c"
+        android:text="Categories"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/currentCategoryHolder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <HorizontalScrollView
-        android:id="@+id/currentQuarters"
-        android:layout_width="@dimen/_146sdp"
-        android:layout_height="@dimen/_20sdp"
+        android:id="@+id/currentQuartersScroll"
+        android:layout_width="323dp"
+        android:layout_height="49dp"
         android:layout_marginStart="@dimen/_30sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginEnd="@dimen/_30sdp"
@@ -40,10 +59,10 @@
         android:translationZ="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036">
+        app:layout_constraintVertical_bias="0.072">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -62,8 +81,8 @@
                 android:text="1" />
 
             <Button
-                android:id="@+id/addCategory2"
-                android:layout_width="@dimen/_52sdp"
+                android:id="@+id/addQuarter"
+                android:layout_width="@dimen/_48sdp"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
@@ -76,31 +95,42 @@
 
     <ScrollView
         android:id="@+id/scrollViewOfStudents"
-        android:layout_width="@dimen/_316sdp"
-        android:layout_height="@dimen/_500sdp"
+        android:layout_width="392dp"
+        android:layout_height="604dp"
         android:layout_marginEnd="2dp"
-        android:background="#f1ffec"
+        android:background="#324321"
         app:layout_constraintBottom_toTopOf="@+id/viewBoxColorGreenBottom"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewBoxColorGreenInsideTop"
-        app:layout_constraintVertical_bias="0.472">
+        app:layout_constraintVertical_bias="0.692">
 
         <LinearLayout
             android:id="@+id/layoutForListOfStudents"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_300sdp"
+            android:layout_height="@dimen/_500sdp"
             android:background="#324321"
             android:orientation="vertical">
 
+
+            <TextView
+                android:id="@+id/WorkholderTextIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_sdp"
+                android:layout_weight="1"
+                android:text="STUDENT WORKS"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
             <HorizontalScrollView
                 android:id="@+id/WorkHolderScroll"
-                android:layout_width="@dimen/_270sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="50dp"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
                 android:background="@drawable/rounded_bg"
                 android:backgroundTint="#1e271b"
                 android:translationZ="5dp">
@@ -113,7 +143,7 @@
 
                     <Button
                         android:id="@+id/work1"
-                        android:layout_width="@dimen/_30sdp"
+                        android:layout_width="@dimen/_48sdp"
                         android:layout_height="match_parent"
                         android:layout_margin="1dp"
                         android:backgroundTint="#576D54"
@@ -122,18 +152,8 @@
                         android:text="1" />
 
                     <Button
-                        android:id="@+id/overall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_margin="1dp"
-                        android:backgroundTint="#576D54"
-                        android:insetTop="0dp"
-                        android:insetBottom="0dp"
-                        android:text="overall" />
-
-                    <Button
                         android:id="@+id/addWork"
-                        android:layout_width="@dimen/_40sdp"
+                        android:layout_width="@dimen/_48sdp"
                         android:layout_height="match_parent"
                         android:layout_margin="1dp"
                         android:backgroundTint="#576D54"
@@ -142,15 +162,6 @@
                         android:text="+" />
                 </LinearLayout>
             </HorizontalScrollView>
-
-            <TextView
-                android:id="@+id/WorkholderTextIndicator"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="STUDENT WORKS"
-                android:textAlignment="center"
-                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/borderForStudentListTextHolder_STUDENT"
@@ -162,7 +173,8 @@
                 android:text="STUDENT            SCORE"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:id="@+id/StudentInformation"
@@ -218,9 +230,9 @@
 
     <View
         android:id="@+id/viewBoxColorGreenTop"
-        android:layout_width="@dimen/_320sdp"
-        android:layout_height="@dimen/_130sdp"
-        android:layout_marginBottom="419dp"
+        android:layout_width="@dimen/_322sdp"
+        android:layout_height="@dimen/_153sdp"
+        android:layout_marginBottom="@dimen/_326sdp"
         android:background="#546c4c"
         android:translationZ="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -232,10 +244,10 @@
 
     <View
         android:id="@+id/viewBoxColorGreenBottom"
-        android:layout_width="@dimen/_3sdp"
-        android:layout_height="@dimen/_52sdp"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_55sdp"
         android:background="#546c4c"
-        android:translationZ="2dp"
+        android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -243,12 +255,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
+    <Button
+        android:id="@+id/finalizeGradeButton"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginStart="@dimen/_213sdp"
+        android:layout_marginTop="@dimen/_363sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:backgroundTint="#1e271b"
+        android:elevation="@dimen/_7sdp"
+        android:text="Update Grades"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986" />
+
     <View
         android:id="@+id/viewBoxColorGreenInsideBottom"
         android:layout_width="@dimen/_305sdp"
         android:layout_height="@dimen/_40sdp"
         android:background="#6E8966"
-        android:translationZ="2dp"
+        android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
@@ -259,25 +290,24 @@
 
     <View
         android:id="@+id/viewBoxColorGreenInsideTop"
-        android:layout_width="@dimen/_305sdp"
-        android:layout_height="@dimen/_115sdp"
+        android:layout_width="@dimen/_309sdp"
+        android:layout_height="@dimen/_139sdp"
         android:background="#6E8966"
         android:translationZ="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011" />
+        app:layout_constraintVertical_bias="0.012" />
 
     <TextView
         android:id="@+id/sectionInformation_GradingSystemInformation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="485dp"
-        android:layout_marginEnd="171dp"
-        android:layout_marginBottom="13dp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_378sdp"
+        android:layout_marginEnd="@dimen/_133sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
         android:background="@drawable/rounded_bg"
         android:backgroundTint="#839d7a"
         android:text="Grading System: Weighted Category"
@@ -295,13 +325,13 @@
         android:id="@+id/sectionInformationBottom_Section"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="467dp"
-        android:layout_marginEnd="170dp"
-        android:layout_marginBottom="31dp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_364sdp"
+        android:layout_marginEnd="@dimen/_132sdp"
+        android:layout_marginBottom="@dimen/_24sdp"
         android:background="@drawable/rounded_bg"
         android:backgroundTint="#839d7a"
-        android:text="Current Section: St. Isidore of Seville"
+        android:text="Current Section: EXAMPLE SECTION"
         android:textColor="@color/white"
         android:textSize="13sp"
         android:translationZ="5dp"
@@ -312,31 +342,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.992" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="138dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="274dp"
-        android:layout_marginTop="466dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="6dp"
-        android:backgroundTint="#1e271b"
-        android:text="Update Grades"
-        android:textSize="11sp"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.986" />
-
     <HorizontalScrollView
         android:id="@+id/currentCategoryHolder"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="@dimen/_40sdp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="71dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="426dp"
         android:background="@drawable/rounded_bg"
@@ -344,9 +355,10 @@
         android:translationZ="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.013">
+        app:layout_constraintVertical_bias="0.16">
 
         <LinearLayout
             android:id="@+id/linearLayoutForCategories"
@@ -392,12 +404,18 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="@dimen/_48sdp"
-        android:layout_height="@dimen/_48sdp"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginBottom="820dp"
         android:translationZ="2dp"
-        app:srcCompat="@drawable/GradingMadeEasyLogo"
-        tools:layout_editor_absoluteX="330dp"
-        tools:layout_editor_absoluteY="9dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/GradingMadeEasyLogo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
