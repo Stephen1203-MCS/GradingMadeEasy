@@ -70,6 +70,17 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/RemoveQuarter"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#576D54"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="-" />
+
+            <Button
                 android:id="@+id/quarter1Button"
                 android:layout_width="@dimen/_48sdp"
                 android:layout_height="match_parent"
@@ -90,6 +101,7 @@
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="+" />
+
         </LinearLayout>
     </HorizontalScrollView>
 
@@ -140,6 +152,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/RemoveWork"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#576D54"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="-" />
 
                     <Button
                         android:id="@+id/work1"
@@ -223,6 +246,17 @@
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="+" />
+
+            <Button
+                android:id="@+id/addStudentInformation3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#576D54"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="-" />
 
 
         </LinearLayout>
@@ -365,6 +399,17 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/removeCategory"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#576D54"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="-" />
 
             <Button
                 android:id="@+id/currentCategory"
