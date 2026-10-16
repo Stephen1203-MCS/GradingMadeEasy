@@ -30,8 +30,8 @@
         android:layout_width="417dp"
         android:layout_height="725dp"
         android:background="#7AA07A"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="93dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="91dp" />
 
     <TextView
         android:id="@+id/textView9"
@@ -94,14 +94,14 @@
         android:text="Section 1"
         android:textSize="18dp"
         tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="179dp" />
+        tools:layout_editor_absoluteY="180dp" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="140dp"
         android:layout_height="55dp"
         android:backgroundTint="#767676"
-        android:text="Section 3"
+        android:text="Section 6"
         android:textSize="18dp"
         tools:layout_editor_absoluteX="101dp"
         tools:layout_editor_absoluteY="249dp" />
@@ -154,7 +154,7 @@
         android:layout_width="134dp"
         android:layout_height="56dp"
         android:backgroundTint="#767676"
-        android:text="Section 4"
+        android:text="Section 7"
         android:textSize="18dp"
         tools:layout_editor_absoluteX="256dp"
         tools:layout_editor_absoluteY="249dp" />
@@ -211,5 +211,65 @@
         android:textSize="15dp"
         tools:layout_editor_absoluteX="167dp"
         tools:layout_editor_absoluteY="304dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="368dp"
+        android:layout_height="387dp"
+        android:background="#576D54"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="382dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="339dp"
+        android:layout_height="139dp"
+        android:background="#5B5B5B"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="337dp"
+        android:layout_height="62dp"
+        android:background="#5B5B5B"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="567dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="337dp"
+        android:layout_height="54dp"
+        android:background="#5B5B5B"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="671dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="194dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#333131"
+        android:text="10 Sections"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="574dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="194dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#333131"
+        android:text="4 active sections"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="671dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="17dp"
+        android:layout_height="19dp"
+        android:background="#333131"
+        android:backgroundTint="#333131"
+        app:srcCompat="@android:drawable/ic_popup_sync"
+        tools:layout_editor_absoluteX="337dp"
+        tools:layout_editor_absoluteY="680dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
