@@ -9,14 +9,60 @@
     tools:context=".SectionTemplate">
 
 
+    <View
+        android:id="@+id/viewBoxColorGreenTop"
+        android:layout_width="408dp"
+        android:layout_height="189dp"
+        android:background="#546c4c"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/currentCategoryHolder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/viewBoxColorGreenInsideTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_4sdp"
+        android:background="#6E8966"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/viewBoxColorGreenTop"
+        app:layout_constraintEnd_toEndOf="@id/viewBoxColorGreenTop"
+        app:layout_constraintStart_toStartOf="@id/viewBoxColorGreenTop"
+        app:layout_constraintTop_toTopOf="@id/viewBoxColorGreenTop" />
+
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#576D54"
+        android:text="X"
+        android:translationZ="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:translationZ="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gradingmadeeasylogo" />
+
+
     <TextView
         android:id="@+id/quarterOrSemesterHolder"
         android:layout_width="@dimen/_85sdp"
-        android:layout_height="@dimen/_16sdp"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="262dp"
-        android:layout_weight="1"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rounded_bg"
         android:backgroundTint="#546c4c"
         android:text="Quarters"
@@ -24,45 +70,24 @@
         android:textColor="@color/white"
         android:translationZ="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/categoryNameView"
-        android:layout_width="@dimen/_85sdp"
-        android:layout_height="@dimen/_16sdp"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="105dp"
-        android:layout_marginEnd="262dp"
-        android:layout_weight="1"
-        android:background="@drawable/rounded_bg"
-        android:backgroundTint="#546c4c"
-        android:text="Categories"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/currentCategoryHolder"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <HorizontalScrollView
         android:id="@+id/currentQuarterOrSemesterssScroll"
-        android:layout_width="@dimen/_250sdp"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_38sdp"
         android:layout_marginStart="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="@dimen/_30sdp"
-        android:layout_marginBottom="@dimen/_426sdp"
         android:background="@drawable/rounded_bg"
         android:backgroundTint="#1e271b"
         android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.072">
+        app:layout_constraintTop_toBottomOf="@id/quarterOrSemesterHolder">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -105,33 +130,101 @@
         </LinearLayout>
     </HorizontalScrollView>
 
+    <TextView
+        android:id="@+id/categoryNameView"
+        android:layout_width="@dimen/_85sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="#546c4c"
+        android:text="Categories"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:translationZ="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/currentQuarterOrSemesterssScroll" />
+
+    <HorizontalScrollView
+        android:id="@+id/currentCategoryHolder"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="#1e271b"
+        android:translationZ="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryNameView">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutForCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/removeCategory"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#576D54"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/currentCategory"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:backgroundTint="#576D54"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="ICT" />
+
+            <Button
+                android:id="@+id/addCategory"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:backgroundTint="#576D54"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="+" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
     <ScrollView
         android:id="@+id/scrollViewOfStudents"
-        android:layout_width="392dp"
-        android:layout_height="604dp"
-        android:layout_marginEnd="2dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
         android:background="#324321"
-        app:layout_constraintBottom_toTopOf="@+id/viewBoxColorGreenBottom"
+        app:layout_constraintBottom_toTopOf="@id/viewBoxColorGreenBottom"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewBoxColorGreenInsideTop"
-        app:layout_constraintVertical_bias="0.692">
+        app:layout_constraintTop_toBottomOf="@id/viewBoxColorGreenTop">
 
         <LinearLayout
             android:id="@+id/layoutForListOfStudents"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_500sdp"
+            android:layout_height="wrap_content"
             android:background="#324321"
-            android:orientation="vertical">
-
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_12sdp">
 
             <TextView
                 android:id="@+id/WorkholderTextIndicator"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_2sdp"
-                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:text="STUDENT WORKS"
                 android:textAlignment="center"
                 android:textColor="@color/white" />
@@ -140,9 +233,8 @@
                 android:id="@+id/WorkHolderScroll"
                 android:layout_width="@dimen/_250sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/_5sdp"
-                android:layout_marginEnd="@dimen/_50sdp"
                 android:background="@drawable/rounded_bg"
                 android:backgroundTint="#1e271b"
                 android:translationZ="5dp">
@@ -190,19 +282,21 @@
                 android:id="@+id/borderForStudentListTextHolder_STUDENT"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_36sdp"
-                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:background="@drawable/rounded_bg"
                 android:backgroundTint="#546c4c"
+                android:gravity="center"
                 android:text="STUDENT            SCORE"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="30dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <LinearLayout
                 android:id="@+id/StudentInformation"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_50ssp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_4sdp"
                 android:orientation="horizontal">
 
                 <EditText
@@ -239,9 +333,8 @@
             <Button
                 android:id="@+id/addStudentInformation"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_4sdp"
                 android:backgroundTint="#576D54"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
@@ -250,217 +343,93 @@
             <Button
                 android:id="@+id/addStudentInformation3"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_4sdp"
                 android:backgroundTint="#576D54"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="-" />
 
-
         </LinearLayout>
     </ScrollView>
 
-    <View
-        android:id="@+id/viewBoxColorGreenTop"
-        android:layout_width="@dimen/_322sdp"
-        android:layout_height="@dimen/_153sdp"
-        android:layout_marginBottom="@dimen/_326sdp"
-        android:background="#546c4c"
-        android:translationZ="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/viewBoxColorGreenBottom"
         android:layout_width="0dp"
-        android:layout_height="@dimen/_55sdp"
+        android:layout_height="0dp"
         android:background="#546c4c"
         android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@id/sectionInformationBottom_Section" />
+
+    <View
+        android:id="@+id/viewBoxColorGreenInsideBottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_2sdp"
+        android:background="#6E8966"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/viewBoxColorGreenBottom"
+        app:layout_constraintEnd_toEndOf="@id/viewBoxColorGreenBottom"
+        app:layout_constraintStart_toStartOf="@id/viewBoxColorGreenBottom"
+        app:layout_constraintTop_toTopOf="@id/viewBoxColorGreenBottom" />
+
+    <TextView
+        android:id="@+id/sectionInformation_GradingSystemInformation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="#839d7a"
+        android:paddingHorizontal="@dimen/_6sdp"
+        android:paddingVertical="@dimen/_2sdp"
+        android:text="Grading System: Weighted Category"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/finalizeGradeButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sectionInformationBottom_Section"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="#839d7a"
+        android:paddingHorizontal="@dimen/_6sdp"
+        android:paddingVertical="@dimen/_2sdp"
+        android:text="Current Section: EXAMPLE SECTION"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toTopOf="@id/sectionInformation_GradingSystemInformation"
+        app:layout_constraintEnd_toStartOf="@id/finalizeGradeButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/finalizeGradeButton"
         android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_38sdp"
-        android:layout_marginStart="@dimen/_213sdp"
-        android:layout_marginTop="@dimen/_363sdp"
-        android:layout_marginEnd="@dimen/_12sdp"
-        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
         android:backgroundTint="#1e271b"
         android:elevation="@dimen/_7sdp"
         android:text="Update Grades"
         android:textSize="11sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.986" />
-
-    <View
-        android:id="@+id/viewBoxColorGreenInsideBottom"
-        android:layout_width="@dimen/_305sdp"
-        android:layout_height="@dimen/_40sdp"
-        android:background="#6E8966"
-        android:translationZ="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.991" />
-
-
-    <View
-        android:id="@+id/viewBoxColorGreenInsideTop"
-        android:layout_width="@dimen/_309sdp"
-        android:layout_height="@dimen/_139sdp"
-        android:background="#6E8966"
-        android:translationZ="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.012" />
-
-    <TextView
-        android:id="@+id/sectionInformation_GradingSystemInformation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_6sdp"
-        android:layout_marginTop="@dimen/_378sdp"
-        android:layout_marginEnd="@dimen/_133sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:background="@drawable/rounded_bg"
-        android:backgroundTint="#839d7a"
-        android:text="Grading System: Weighted Category"
-        android:textColor="@color/white"
-        android:textSize="13sp"
         android:translationZ="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992" />
-
-    <TextView
-        android:id="@+id/sectionInformationBottom_Section"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_6sdp"
-        android:layout_marginTop="@dimen/_364sdp"
-        android:layout_marginEnd="@dimen/_132sdp"
-        android:layout_marginBottom="@dimen/_24sdp"
-        android:background="@drawable/rounded_bg"
-        android:backgroundTint="#839d7a"
-        android:text="Current Section: EXAMPLE SECTION"
-        android:textColor="@color/white"
-        android:textSize="13sp"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992" />
-
-    <HorizontalScrollView
-        android:id="@+id/currentCategoryHolder"
-        android:layout_width="@dimen/_250sdp"
-        android:layout_height="@dimen/_40sdp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="426dp"
-        android:background="@drawable/rounded_bg"
-        android:backgroundTint="#1e271b"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.346"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16">
-
-        <LinearLayout
-            android:id="@+id/linearLayoutForCategories"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/removeCategory"
-                android:layout_width="@dimen/_48sdp"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:backgroundTint="#576D54"
-                android:insetTop="0dp"
-                android:insetBottom="0dp"
-                android:text="-" />
-
-            <Button
-                android:id="@+id/currentCategory"
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:backgroundTint="#576D54"
-                android:insetTop="0dp"
-                android:insetBottom="0dp"
-                android:text="ICT" />
-
-            <Button
-                android:id="@+id/addCategory"
-                android:layout_width="@dimen/_48sdp"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:backgroundTint="#576D54"
-                android:insetTop="0dp"
-                android:insetBottom="0dp"
-                android:text="+" />
-
-        </LinearLayout>
-    </HorizontalScrollView>
-
-    <Button
-        android:id="@+id/exit"
-        android:layout_width="@dimen/_30sdp"
-        android:layout_height="@dimen/_35sdp"
-        android:backgroundTint="#576D54"
-        android:text="X"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="@dimen/_30sdp"
-        android:layout_height="@dimen/_30sdp"
-        android:layout_marginStart="@dimen/_5sdp"
-        android:layout_marginBottom="820dp"
-        android:translationZ="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.989"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25"
-        app:srcCompat="@drawable/gradingmadeeasylogo" />
-
+        app:layout_constraintTop_toTopOf="@id/sectionInformationBottom_Section" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

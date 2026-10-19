@@ -6,19 +6,19 @@
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="RegisterScreen (1)">
+      <SelectionState runConfigName="SectionTemplate">
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="Dashboard">
+      <SelectionState runConfigName="SectionTemplate (1)">
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="LoginScreen">
+      <SelectionState runConfigName="SectionTemplate (2)">
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="SectionCreation">
+      <SelectionState runConfigName="SectionTemplate (3)">
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>

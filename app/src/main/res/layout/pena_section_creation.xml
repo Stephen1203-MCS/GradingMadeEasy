@@ -7,230 +7,264 @@
     android:layout_height="match_parent"
     android:background="#546c4c">
 
-    <ImageView
-        android:id="@+id/ImageView"
-        android:layout_width="@dimen/_79sdp"
-        android:layout_height="@dimen/_69sdp"
-        android:layout_marginStart="@dimen/_227sdp"
-        android:layout_marginTop="@dimen/_22sdp"
-        android:translationZ="@dimen/_2sdp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gradingmadeeasylogo" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-    <EditText
-        android:id="@+id/sectionName"
-        android:layout_width="@dimen/_294sdp"
-        android:layout_height="@dimen/_43sdp"
-        android:layout_marginStart="@dimen/_9sdp"
-        android:layout_marginTop="@dimen/_163sdp"
-        android:background="@drawable/evenmorerounded_bg"
-        android:backgroundTint="#435243"
-        android:text="Put your section name"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_23ssp"
-        android:translationZ="@dimen/_2sdp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/sectionDetailsHeader"
-        android:layout_width="@dimen/_139sdp"
-        android:layout_height="@dimen/_22sdp"
-        android:layout_marginStart="@dimen/_11sdp"
-        android:layout_marginTop="@dimen/_138sdp"
-        android:background="@drawable/evenmorerounded_bg"
-        android:backgroundTint="#435243"
-        android:text="Section Name:"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_16ssp"
-        android:translationZ="@dimen/_2sdp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/viewContainterForSectionCreationAndChoosingOfGradingSystem"
-        android:layout_width="@dimen/_305sdp"
-        android:layout_height="@dimen/_90sdp"
-        android:layout_marginStart="@dimen/_5sdp"
-        android:layout_marginTop="@dimen/_12sdp"
-        android:background="@drawable/evenmorerounded_bg"
-        android:backgroundTint="#2B352B"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="@dimen/_150sdp"
-        android:layout_height="@dimen/_50sdp"
-        android:layout_marginStart="@dimen/_87sdp"
-        android:layout_marginTop="@dimen/_32sdp"
-        android:text="CREATE YOUR SECTION"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_20ssp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/viewContainterForSectionCreationAndChoosingOfGradingSystem2"
-        android:layout_width="@dimen/_305sdp"
-        android:layout_height="@dimen/_90sdp"
-        android:layout_marginStart="@dimen/_5sdp"
-        android:layout_marginTop="@dimen/_128sdp"
-        android:background="@drawable/evenmorerounded_bg"
-        android:backgroundTint="#2A352A"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/viewContainterForSectionCreationAndChoosingOfGradingSystem3"
-        android:layout_width="@dimen/_305sdp"
-        android:layout_height="@dimen/_179sdp"
-        android:layout_marginStart="@dimen/_5sdp"
-        android:layout_marginTop="@dimen/_224sdp"
-        android:background="@drawable/evenmorerounded_bg"
-        android:backgroundTint="#2B352B"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-
-    <View
-        android:id="@+id/viewContainterForSectionCreationAndChoosingOfGradingSystem4"
-        android:layout_width="@dimen/_305sdp"
-        android:layout_height="@dimen/_142sdp"
-        android:layout_marginStart="@dimen/_5sdp"
-        android:layout_marginTop="@dimen/_410sdp"
-        android:background="@drawable/evenmorerounded_bg"
-        android:backgroundTint="#2B352B"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/viewContainterForSectionCreationAndChoosingOfGradingSystem5"
-        android:layout_width="395dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="@dimen/_6sdp"
-        android:layout_marginTop="@dimen/_563sdp"
-        android:background="@drawable/evenmorerounded_bg"
-        android:backgroundTint="#2B352B"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/formulaShownForTheGradingSystem"
-        android:layout_width="@dimen/_173sdp"
-        android:layout_height="@dimen/_26sdp"
-        android:layout_marginStart="@dimen/_11sdp"
-        android:layout_marginTop="@dimen/_417sdp"
-        android:background="@drawable/evenmorerounded_bg"
-        android:backgroundTint="#435243"
-        android:text="Formula Used"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_19ssp"
-        android:translationZ="@dimen/_2sdp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/formulaTextBox"
-        android:layout_width="@dimen/_289sdp"
-        android:layout_height="@dimen/_88sdp"
-        android:layout_marginStart="@dimen/_9sdp"
-        android:layout_marginTop="@dimen/_449sdp"
-        android:background="@drawable/evenmorerounded_bg"
-        android:backgroundTint="#435243"
-        android:text="Example Formula = TotalPoints / Student Scores"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_19ssp"
-        android:translationZ="@dimen/_2sdp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textForGradingSystems"
-        android:layout_width="@dimen/_173sdp"
-        android:layout_height="@dimen/_26sdp"
-        android:layout_marginStart="@dimen/_12sdp"
-        android:layout_marginTop="@dimen/_230sdp"
-        android:background="@drawable/evenmorerounded_bg"
-        android:backgroundTint="#435243"
-        android:text="Grading Systems"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_19ssp"
-        android:translationZ="@dimen/_2sdp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/createSectionDetailsButton"
-        android:layout_width="@dimen/_290sdp"
-        android:layout_height="@dimen/_90sdp"
-        android:layout_marginStart="@dimen/_13sdp"
-        android:layout_marginTop="@dimen/_570sdp"
-        android:backgroundTint="#374731"
-        android:text="CREATE SECTION"
-        android:textSize="@dimen/_23ssp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioGroup
-        android:id="@+id/radioGroupForGradingSystems"
-        android:layout_width="@dimen/_288sdp"
-        android:layout_height="@dimen/_81sdp"
-        android:layout_marginStart="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_267sdp"
-        android:layout_marginEnd="@dimen/_32sdp"
-        android:layout_marginBottom="@dimen/_353sdp"
-        android:translationZ="@dimen/_1sdp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/radioButton_SumOfAllScores"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_4sdp"
-            android:background="@drawable/evenmorerounded_bg"
-            android:backgroundTint="#435243"
-            android:text="Total Sum of Points"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_16ssp" />
+            android:paddingBottom="@dimen/_20sdp">
 
-        <RadioButton
-            android:id="@+id/radioButton_WeightedCategory"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_37sdp"
-            android:background="@drawable/evenmorerounded_bg"
-            android:backgroundTint="#435243"
-            android:text="Weighted Category"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_16ssp" />
-    </RadioGroup>
+            <View
+                android:id="@+id/viewContainterForSectionCreationAndChoosingOfGradingSystem"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_75sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/evenmorerounded_bg"
+                android:backgroundTint="#2B352B"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_max="@dimen/_305sdp" />
 
-    <Button
-        android:id="@+id/exitButtonForSectionCreation"
-        android:layout_width="@dimen/_63sdp"
-        android:layout_height="@dimen/_65sdp"
-        android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginEnd="@dimen/_257sdp"
-        android:layout_marginBottom="@dimen/_595sdp"
-        android:backgroundTint="#576D54"
-        android:text="X"
-        android:textSize="@dimen/_16ssp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+            <Button
+                android:id="@+id/exitButtonForSectionCreation"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:backgroundTint="#576D54"
+                android:text="X"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintBottom_toBottomOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem"
+                app:layout_constraintStart_toStartOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem"
+                app:layout_constraintTop_toTopOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:text="CREATE YOUR SECTION"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem"
+                app:layout_constraintEnd_toStartOf="@id/ImageView"
+                app:layout_constraintStart_toEndOf="@id/exitButtonForSectionCreation"
+                app:layout_constraintTop_toTopOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem" />
+
+            <ImageView
+                android:id="@+id/ImageView"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem"
+                app:layout_constraintEnd_toEndOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem"
+                app:layout_constraintTop_toTopOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem"
+                app:srcCompat="@drawable/gradingmadeeasylogo" />
+
+            <View
+                android:id="@+id/viewContainterForSectionCreationAndChoosingOfGradingSystem2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/evenmorerounded_bg"
+                android:backgroundTint="#2A352A"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem"
+                app:layout_constraintWidth_max="@dimen/_305sdp" />
+
+            <TextView
+                android:id="@+id/sectionDetailsHeader"
+                android:layout_width="@dimen/_139sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/evenmorerounded_bg"
+                android:backgroundTint="#435243"
+                android:gravity="center"
+                android:text="Section Name:"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:translationZ="@dimen/_2sdp"
+                app:layout_constraintStart_toStartOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem2"
+                app:layout_constraintTop_toTopOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem2" />
+
+            <EditText
+                android:id="@+id/sectionName"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_43sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/evenmorerounded_bg"
+                android:backgroundTint="#435243"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:text="Put your section name"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                android:translationZ="@dimen/_2sdp"
+                app:layout_constraintBottom_toBottomOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem2"
+                app:layout_constraintEnd_toEndOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem2"
+                app:layout_constraintStart_toStartOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem2"
+                app:layout_constraintTop_toBottomOf="@id/sectionDetailsHeader" />
+
+            <View
+                android:id="@+id/viewContainterForSectionCreationAndChoosingOfGradingSystem3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_165sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/evenmorerounded_bg"
+                android:backgroundTint="#2B352B"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem2"
+                app:layout_constraintWidth_max="@dimen/_305sdp" />
+
+            <TextView
+                android:id="@+id/textForGradingSystems"
+                android:layout_width="@dimen/_173sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/evenmorerounded_bg"
+                android:backgroundTint="#435243"
+                android:gravity="center"
+                android:text="Grading Systems"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:translationZ="@dimen/_2sdp"
+                app:layout_constraintStart_toStartOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem3"
+                app:layout_constraintTop_toTopOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem3" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupForGradingSystems"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:translationZ="@dimen/_1sdp"
+                app:layout_constraintBottom_toBottomOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem3"
+                app:layout_constraintEnd_toEndOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem3"
+                app:layout_constraintStart_toStartOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem3"
+                app:layout_constraintTop_toBottomOf="@id/textForGradingSystems">
+
+                <RadioButton
+                    android:id="@+id/radioButton_SumOfAllScores"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:background="@drawable/evenmorerounded_bg"
+                    android:backgroundTint="#435243"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_6sdp"
+                    android:text="Total Sum of Points"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_WeightedCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/evenmorerounded_bg"
+                    android:backgroundTint="#435243"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_6sdp"
+                    android:text="Weighted Category"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp" />
+            </RadioGroup>
+
+            <View
+                android:id="@+id/viewContainterForSectionCreationAndChoosingOfGradingSystem4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_135sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/evenmorerounded_bg"
+                android:backgroundTint="#2B352B"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem3"
+                app:layout_constraintWidth_max="@dimen/_305sdp" />
+
+            <TextView
+                android:id="@+id/formulaShownForTheGradingSystem"
+                android:layout_width="@dimen/_173sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/evenmorerounded_bg"
+                android:backgroundTint="#435243"
+                android:gravity="center"
+                android:text="Formula Used"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:translationZ="@dimen/_2sdp"
+                app:layout_constraintStart_toStartOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem4"
+                app:layout_constraintTop_toTopOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem4" />
+
+            <TextView
+                android:id="@+id/formulaTextBox"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/evenmorerounded_bg"
+                android:backgroundTint="#435243"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="Example Formula = TotalPoints / Student Scores"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:translationZ="@dimen/_2sdp"
+                app:layout_constraintBottom_toBottomOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem4"
+                app:layout_constraintEnd_toEndOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem4"
+                app:layout_constraintStart_toStartOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem4"
+                app:layout_constraintTop_toBottomOf="@id/formulaShownForTheGradingSystem" />
+
+
+            <View
+                android:id="@+id/viewContainterForSectionCreationAndChoosingOfGradingSystem5"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/evenmorerounded_bg"
+                android:backgroundTint="#2B352B"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem4"
+                app:layout_constraintWidth_max="@dimen/_305sdp" />
+
+            <Button
+                android:id="@+id/createSectionDetailsButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:backgroundTint="#374731"
+                android:text="CREATE SECTION"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintBottom_toBottomOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem5"
+                app:layout_constraintEnd_toEndOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem5"
+                app:layout_constraintStart_toStartOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem5"
+                app:layout_constraintTop_toTopOf="@id/viewContainterForSectionCreationAndChoosingOfGradingSystem5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
