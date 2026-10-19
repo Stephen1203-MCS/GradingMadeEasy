@@ -5,8 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#C8E6C9">
-///
-    <!-- Header -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,7 +32,6 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- Profile section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,7 +72,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Dark mode row -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -101,7 +98,6 @@
             app:trackTint="#81C784" />
     </LinearLayout>
 
-    <!-- Account -->
     <LinearLayout
         android:id="@+id/itemAccount"
         android:layout_width="match_parent"
@@ -130,7 +126,6 @@
             android:textSize="17sp" />
     </LinearLayout>
 
-    <!-- Notifications -->
     <LinearLayout
         android:id="@+id/itemNotifications"
         android:layout_width="match_parent"
@@ -159,7 +154,6 @@
             android:textSize="17sp" />
     </LinearLayout>
 
-    <!-- Security & Privacy -->
     <LinearLayout
         android:id="@+id/itemSecurity"
         android:layout_width="match_parent"
@@ -179,7 +173,7 @@
             app:tint="#000000" />
 
         <TextView
-            android:id="@+id/security & privacy"
+            android:id="@+id/securityandprivacy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -188,7 +182,6 @@
             android:textSize="17sp" />
     </LinearLayout>
 
-    <!-- Appearance -->
     <LinearLayout
         android:id="@+id/itemAppearance"
         android:layout_width="match_parent"
@@ -217,7 +210,6 @@
             android:textSize="17sp" />
     </LinearLayout>
 
-    <!-- Language -->
     <LinearLayout
         android:id="@+id/itemLanguage"
         android:layout_width="match_parent"

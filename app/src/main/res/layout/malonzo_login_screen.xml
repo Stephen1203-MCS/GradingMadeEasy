@@ -45,7 +45,7 @@
         android:translationZ="@dimen/_2sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/GradingMadeEasyLogo" />
+        app:srcCompat="@drawable/gradingmadeeasylogo" />
 
     <Button
         android:id="@+id/main"
