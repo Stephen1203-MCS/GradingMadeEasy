@@ -131,14 +131,6 @@
         tools:layout_editor_absoluteX="159dp"
         tools:layout_editor_absoluteY="149dp" />
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/GradingMadeEasyLogo"
-        tools:layout_editor_absoluteX="-8dp"
-        tools:layout_editor_absoluteY="-15dp" />
-
     <Button
         android:id="@+id/button5"
         android:layout_width="134dp"
@@ -271,5 +263,16 @@
         app:srcCompat="@android:drawable/ic_popup_sync"
         tools:layout_editor_absoluteX="337dp"
         tools:layout_editor_absoluteY="680dp" />
+
+    <ImageView
+        android:id="@+id/AppIconSectionCreation"
+        android:layout_width="89dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:translationZ="@dimen/_2sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/GradingMadeEasyLogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
