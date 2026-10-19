@@ -12,11 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GradingMadeEasy">
         <activity
-            android:name=".WelcomeScreen"
+            android:name=".RegisterScreen"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".Dashboard"
+            android:name=".LoginScreen"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
@@ -27,6 +27,16 @@
             android:name=".SectionTemplate"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/WelcomeText"
-        android:layout_width="206dp"
-        android:layout_height="25dp"
+        android:layout_width="203dp"
+        android:layout_height="24dp"
         android:text="Welcome to GradingMadeEasy!"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         tools:layout_editor_absoluteX="102dp"
@@ -18,26 +18,37 @@
 
     <EditText
         android:id="@+id/UsernamePassword"
-        android:layout_width="202dp"
+        android:layout_width="310dp"
         android:layout_height="43dp"
+        android:backgroundTint="#161414"
         android:text="Password"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="342dp" />
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <EditText
+        android:id="@+id/UsernamePassword"
+        android:layout_width="306dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#161414"
+        android:text="Username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="331dp" />
 
     <ImageView
-        android:id="@+id/AppIconSectionCreation"
-        android:layout_width="137dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="88dp"
+        android:id="@+id/ImageView"
+        android:layout_width="153dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="92dp"
         android:translationZ="@dimen/_2sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/GradingMadeEasyLogo" />
 
     <Button
-        android:id="@+id/LoginButton"
+        android:id="@+id/main"
         android:layout_width="336dp"
         android:layout_height="61dp"
         android:backgroundTint="#385E3F"
