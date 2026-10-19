@@ -2,12 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#546c4c">
 
     <ImageView
-        android:id="@+id/AppIconSectionCreation"
+        android:id="@+id/ImageView"
         android:layout_width="@dimen/_79sdp"
         android:layout_height="@dimen/_69sdp"
         android:layout_marginStart="@dimen/_227sdp"
@@ -15,7 +16,7 @@
         android:translationZ="@dimen/_2sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/GradingMadeEasyLogo" />
+        app:srcCompat="@drawable/gradingmadeeasylogo" />
 
     <EditText
         android:id="@+id/sectionName"
