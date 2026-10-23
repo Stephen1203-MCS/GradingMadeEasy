@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#253117"
-    tools:context=".SectionTemplate">
+    tools:context=".SectionFile.SectionTemplate">
 
 
     <View

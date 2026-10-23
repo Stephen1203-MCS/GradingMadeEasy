@@ -18,11 +18,11 @@
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="SectionTemplate (4)">
+      <SelectionState runConfigName="SectionTemplate (5)">
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="SectionTemplate (5)">
+      <SelectionState runConfigName="SectionTemplate">
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>
