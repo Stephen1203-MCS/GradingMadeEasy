@@ -7,54 +7,69 @@
     android:layout_height="match_parent"
     android:background="#4F7942">
 
+
     <TextView
         android:id="@+id/WelcomeText"
         android:layout_width="203dp"
         android:layout_height="24dp"
+        android:layout_marginTop="236dp"
         android:text="Welcome to GradingMadeEasy!"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="225dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/UsernamePassword"
-        android:layout_width="310dp"
-        android:layout_height="43dp"
-        android:backgroundTint="#161414"
-        android:text="Password"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="406dp" />
-
-    <EditText
-        android:id="@+id/UsernamePassword"
-        android:layout_width="306dp"
-        android:layout_height="48dp"
+        android:layout_width="314dp"
+        android:layout_height="49dp"
         android:backgroundTint="#161414"
         android:text="Username"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="331dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <EditText
+        android:id="@+id/usernamePassword"
+        android:layout_width="314dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#161414"
+        android:text="Password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.488" />
 
     <ImageView
         android:id="@+id/ImageView"
         android:layout_width="153dp"
         android:layout_height="115dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="104dp"
         android:translationZ="@dimen/_2sdp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/gradingmadeeasylogo" />
 
     <Button
-        android:id="@+id/main"
-        android:layout_width="336dp"
-        android:layout_height="61dp"
+        android:id="@+id/button9"
+        android:layout_width="340dp"
+        android:layout_height="72dp"
         android:backgroundTint="#385E3F"
         android:text="Login"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="652dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
