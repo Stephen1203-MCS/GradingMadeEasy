@@ -179,13 +179,34 @@
 
             <Button
                 android:id="@+id/currentCategory"
-                android:layout_width="@dimen/_50sdp"
+                android:layout_width="@dimen/_80sdp"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:backgroundTint="#576D54"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:text="ICT" />
+                android:paddingHorizontal="2dp"
+                android:text="Performance Task"
+                app:autoSizeMaxTextSize="@dimen/_10ssp"
+                app:autoSizeMinTextSize="@dimen/_3sdp"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeTextType="uniform" />
+
+            <Button
+                android:id="@+id/finalGradeButton"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#576D54"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingHorizontal="2dp"
+                android:text="Grades"
+                app:autoSizeMaxTextSize="@dimen/_10ssp"
+                app:autoSizeMinTextSize="@dimen/_3sdp"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeTextType="uniform" />
 
             <Button
                 android:id="@+id/addCategory"
@@ -341,7 +362,7 @@
                 android:text="+" />
 
             <Button
-                android:id="@+id/addStudentInformation3"
+                android:id="@+id/removeStudentInformation"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_38sdp"
                 android:layout_marginTop="@dimen/_4sdp"
