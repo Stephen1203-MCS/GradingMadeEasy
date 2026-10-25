@@ -52,7 +52,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SectionFile.SectionTemplate"
+            android:name=".Pena_SectionFolder.SectionTemplate"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>

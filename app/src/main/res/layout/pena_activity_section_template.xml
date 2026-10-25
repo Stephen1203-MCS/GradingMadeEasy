@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#253117"
-    tools:context=".SectionFile.SectionTemplate">
+    tools:context=".Pena_SectionFolder.SectionTemplate">
 
 
     <View
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <HorizontalScrollView
-        android:id="@+id/currentQuarterOrSemesterssScroll"
+        android:id="@+id/currentQuarterOrSemestersScroll"
         android:layout_width="0dp"
         android:layout_height="@dimen/_38sdp"
         android:layout_marginStart="@dimen/_30sdp"
@@ -90,6 +90,7 @@
         app:layout_constraintTop_toBottomOf="@id/quarterOrSemesterHolder">
 
         <LinearLayout
+            android:id="@+id/linearLayoutForQuarters"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal">
@@ -143,7 +144,7 @@
         android:translationZ="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/currentQuarterOrSemesterssScroll" />
+        app:layout_constraintTop_toBottomOf="@id/currentQuarterOrSemestersScroll" />
 
     <HorizontalScrollView
         android:id="@+id/currentCategoryHolder"
