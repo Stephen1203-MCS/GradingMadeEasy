@@ -17,6 +17,8 @@ public class RegisterScreen extends AppCompatActivity {
         setContentView(R.layout.malonzo_register_screen);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            setContentView(R.layout.activity_dashboard);
+            setContentView(R.layout.malonzo_login_screen);
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
