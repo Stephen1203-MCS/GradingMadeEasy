@@ -169,7 +169,7 @@ public class SectionTemplate extends AppCompatActivity {
     }
 
     private void returnToDashBoard() {
-        finish();
+        setContentView(R.layout.activity_dashboard);
     }
 
     public static final String EXTRA_SECTION_ID = "section_id";

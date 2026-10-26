@@ -9,11 +9,17 @@ public class SectionRepository {
     private static SectionRepository instance;
     private final ArrayList<Section> sections = new ArrayList<>();
 
-    private SectionRepository() {
+    public SectionRepository() {
     }
     public static SectionRepository getInstance() {
-
-        return null;
+        if (instance == null) {
+            synchronized (SectionRepository.class) {
+                if (instance == null) {
+                    instance = new SectionRepository();
+                }
+            }
+        }
+        return instance;
     }
 
     public ArrayList<Section> getSections() {

@@ -42,7 +42,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SectionCreation"
+            android:name=".Pena_SectionCreation"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>

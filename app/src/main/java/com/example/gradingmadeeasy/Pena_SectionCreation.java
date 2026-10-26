@@ -17,7 +17,7 @@ import com.example.gradingmadeeasy.Pena_SectionFolder.Section;
 import com.example.gradingmadeeasy.Pena_SectionFolder.SectionTemplate;
 import com.example.gradingmadeeasy.Pena_SectionFolder.SectionRepository;
 
-public class SectionCreation extends AppCompatActivity {
+public class Pena_SectionCreation extends AppCompatActivity {
     private EditText sectionNameInput;
     private RadioGroup gradingSystemGroup;
     private TextView formulaTextBox;
