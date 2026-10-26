@@ -26,15 +26,18 @@ public class SectionRepository {
 
 
     public Section getSectionById(String id) {
-       /* for every section in the list returned by getSections
-       compare with the id, return the section, if none return null
-       * */
-        return null;
+        Section returnSection = null;
+        for (Section section: sections) {
+            if (section.getId().equals(id)) {
+                returnSection = section;
+            } else {
+                returnSection = null;
+            }
+        }
+        return returnSection;
     }
 
     public void removeSection(String id) {
-       /* for every section in the list returned by getSections
-          compare with id, then NUKE/Delete if it matches. Return null if none
-        */
+        sections.removeIf(section -> section.getId().equals(id));
     }
 }
