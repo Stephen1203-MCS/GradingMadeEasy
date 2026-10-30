@@ -36,6 +36,9 @@ import java.util.Locale;
  *  A student who has no score in a work is just missing from that work's map.
  *  Each Quarter also holds a saved grade for each student (a map), filled when "Update Grades" is pressed. */
 
+//Important note: THIS CANT LAUNCH BY ITSELF, YOU MAY LAUNCH THIS THROUGH SECTION CREATION
+
+
 public class SectionTemplate extends AppCompatActivity {
 
     private static final int COLOR_NORMAL = Color.parseColor("#576D54");
@@ -104,12 +107,10 @@ public class SectionTemplate extends AppCompatActivity {
         });
 
         bindViews();
-        bindViews();
         if (!loadSection()) {
             finish();
             return;
         }
-        setupBottomBar();
         setupBottomBar();
         setupExitButton();
         setupQuarterButtons();
@@ -399,7 +400,7 @@ public class SectionTemplate extends AppCompatActivity {
         redrawStudents();
     }
 
-    // existing == null means "add a new category", otherwise edit that one.
+    // existing == null means "add a new category", otherwise edit that one
     private void showCategoryDialog(final Category existing) {
         LinearLayout form = new LinearLayout(this);
         form.setOrientation(LinearLayout.VERTICAL);

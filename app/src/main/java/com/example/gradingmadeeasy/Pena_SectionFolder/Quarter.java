@@ -48,7 +48,7 @@ public class Quarter {
     }
 
     // TOTAL SCORE system (ignores weights):
-    // all of the student's scores added up / all max scores added up. A missing score counts as 0
+    // all the student's scores added up / all max scores added up. A missing score counts as 0
     public double calculateTotalScoreGrade(Students student) {
         double earned = 0;
         double possible = 0;

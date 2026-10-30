@@ -32,15 +32,12 @@ public class SectionRepository {
 
 
     public Section getSectionById(String id) {
-        Section returnSection = null;
-        for (Section section: sections) {
+        for (Section section : sections) {
             if (section.getId().equals(id)) {
-                returnSection = section;
-            } else {
-                returnSection = null;
+                return section;
             }
         }
-        return returnSection;
+        return null;
     }
 
     public void removeSection(String id) {
