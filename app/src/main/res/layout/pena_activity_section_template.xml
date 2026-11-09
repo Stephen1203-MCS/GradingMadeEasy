@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#253117"
-    tools:context=".Pena_SectionFolder.SectionTemplate">
+    tools:context=".Pena_SectionFolder.Pena_SectionTemplate">
 
 
     <View
@@ -89,6 +89,7 @@
         android:layout_marginEnd="@dimen/_30sdp"
         android:background="@drawable/rounded_bg"
         android:backgroundTint="#1e271b"
+        android:fillViewport="true"
         android:translationZ="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -106,7 +107,6 @@
                 android:layout_width="@dimen/_48sdp"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
-                android:layout_weight="1"
                 android:backgroundTint="#576D54"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
@@ -117,7 +117,6 @@
                 android:layout_width="@dimen/_48sdp"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
-                android:layout_weight="1"
                 android:backgroundTint="#576D54"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
@@ -128,7 +127,6 @@
                 android:layout_width="@dimen/_48sdp"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
-                android:layout_weight="1"
                 android:backgroundTint="#576D54"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
@@ -162,6 +160,7 @@
         android:layout_marginBottom="@dimen/_8sdp"
         android:background="@drawable/rounded_bg"
         android:backgroundTint="#1e271b"
+        android:fillViewport="true"
         android:translationZ="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -178,7 +177,6 @@
                 android:layout_width="@dimen/_48sdp"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
-                android:layout_weight="1"
                 android:backgroundTint="#576D54"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
@@ -204,7 +202,6 @@
                 android:layout_width="@dimen/_50sdp"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
-                android:layout_weight="1"
                 android:backgroundTint="#576D54"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
@@ -235,6 +232,8 @@
         android:layout_marginTop="@dimen/_4sdp"
         android:layout_marginBottom="@dimen/_4sdp"
         android:background="#324321"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
         app:layout_constraintBottom_toTopOf="@id/viewBoxColorGreenBottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -265,7 +264,7 @@
                 android:layout_marginTop="@dimen/_5sdp"
                 android:background="@drawable/rounded_bg"
                 android:backgroundTint="#1e271b"
-                android:translationZ="5dp">
+                android:fillViewport="true">
 
                 <LinearLayout
                     android:id="@+id/linearLayoutForWorkholder"
@@ -278,7 +277,6 @@
                         android:layout_width="@dimen/_48sdp"
                         android:layout_height="match_parent"
                         android:layout_margin="1dp"
-                        android:layout_weight="1"
                         android:backgroundTint="#576D54"
                         android:insetTop="0dp"
                         android:insetBottom="0dp"
