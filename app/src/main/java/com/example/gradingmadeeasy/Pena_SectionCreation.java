@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -13,16 +14,18 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.gradingmadeeasy.Pena_SectionFolder.Section;
-import com.example.gradingmadeeasy.Pena_SectionFolder.SectionTemplate;
-import com.example.gradingmadeeasy.Pena_SectionFolder.SectionRepository;
+import com.example.gradingmadeeasy.Pena_SectionFolder.Pena_SectionTemplate;
 
 public class Pena_SectionCreation extends AppCompatActivity {
+
+    // ---------- Views (linked in linkViews) ----------
+    private Button exitButton;
     private EditText sectionNameInput;
     private RadioGroup gradingSystemGroup;
+    private RadioButton totalSumRadio;
+    private RadioButton weightedRadio;
     private TextView formulaTextBox;
     private Button createSectionButton;
-    private Button exitButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,38 +38,33 @@ public class Pena_SectionCreation extends AppCompatActivity {
             return insets;
         });
 
-        bindViews();
-        setupGradingSystemChoice();
-        setupButtons();
+        linkViews();
+        setListeners();
+
+        // Weighted Category is the starting choice
+        weightedRadio.setChecked(true);
     }
 
-    private void bindViews() { // connect the variables to the sectionName
+    private void linkViews() {
+        exitButton = findViewById(R.id.exitButtonForSectionCreation);
         sectionNameInput = findViewById(R.id.sectionName);
         gradingSystemGroup = findViewById(R.id.radioGroupForGradingSystems);
+        totalSumRadio = findViewById(R.id.radioButton_SumOfAllScores);
+        weightedRadio = findViewById(R.id.radioButton_WeightedCategory);
         formulaTextBox = findViewById(R.id.formulaTextBox);
         createSectionButton = findViewById(R.id.createSectionDetailsButton);
-        exitButton = findViewById(R.id.exitButtonForSectionCreation);
     }
 
-    // ---------- Grading system choice ----------
-    private void setupGradingSystemChoice() {
-        // Changing the choice updates the formula box.
+    private void setListeners() {
+        exitButton.setOnClickListener(v -> finish());
+        createSectionButton.setOnClickListener(v -> createSection());
+
+        // Picking a grading system updates the formula shown
         gradingSystemGroup.setOnCheckedChangeListener((group, checkedId) -> showFormula());
-
-        // Start with Weighted Category selected. This also triggers the listener above.
-        gradingSystemGroup.check(R.id.radioButton_WeightedCategory);
-    }
-
-    // The value that gets saved in the Section.
-    private String getSelectedGradingSystem() {
-        if (gradingSystemGroup.getCheckedRadioButtonId() == R.id.radioButton_SumOfAllScores) {
-            return Section.GRADING_TOTAL;
-        }
-        return Section.GRADING_WEIGHTED;
     }
 
     private void showFormula() {
-        if (Section.GRADING_TOTAL.equals(getSelectedGradingSystem())) {
+        if (totalSumRadio.isChecked()) {
             formulaTextBox.setText(
                     "Grade = (All student scores \u00F7 All max scores) \u00D7 100\n\n"
                             + "Category weights are ignored.\n"
@@ -79,13 +77,7 @@ public class Pena_SectionCreation extends AppCompatActivity {
         }
     }
 
-    // ---------- Buttons ----------
-    private void setupButtons() {
-        exitButton.setOnClickListener(v -> finish());
-        createSectionButton.setOnClickListener(v -> createSection());
-    }
-
-    // Checks the name, then opens the section screen with the name and grading system
+    // Checks the name, then opens the section screen with the name and grading systemm
     private void createSection() {
         String name = sectionNameInput.getText().toString().trim();
         if (name.isEmpty()) {
@@ -94,12 +86,14 @@ public class Pena_SectionCreation extends AppCompatActivity {
             return;
         }
 
-        Section section = new Section(name, getSelectedGradingSystem());
-        SectionRepository.getInstance().addSection(section);
+        // The grading system is the text of the selected radio button
+        RadioButton selected = totalSumRadio.isChecked() ? totalSumRadio : weightedRadio;
 
-        Intent intent = new Intent(this, SectionTemplate.class);
-        intent.putExtra(SectionTemplate.EXTRA_SECTION_ID, section.getId());
+        Intent intent = new Intent(this, Pena_SectionTemplate.class);
+        intent.putExtra(Pena_SectionTemplate.EXTRA_SECTION_NAME, name);
+        intent.putExtra(Pena_SectionTemplate.EXTRA_GRADING_SYSTEM, selected.getText().toString());
         startActivity(intent);
+
         finish();
     }
 }

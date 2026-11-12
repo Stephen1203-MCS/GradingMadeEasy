@@ -38,7 +38,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.554" />
+        app:layout_constraintVertical_bias="0.548" />
 
     <TextView
         android:id="@+id/textView9"
@@ -86,7 +86,7 @@
         app:srcCompat="@android:drawable/ic_menu_search" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/AddSection"
         android:layout_width="56dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
@@ -99,7 +99,7 @@
         app:layout_constraintVertical_bias="0.214" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/DeleteSection"
         android:layout_width="56dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
@@ -112,6 +112,7 @@
         app:layout_constraintVertical_bias="0.299" />
 
     <Button
+        android:id="@+id/section1"
         android:layout_width="140dp"
         android:layout_height="55dp"
         android:layout_marginStart="100dp"
@@ -124,7 +125,7 @@
         app:layout_constraintVertical_bias="0.214" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/section6"
         android:layout_width="140dp"
         android:layout_height="55dp"
         android:layout_marginStart="100dp"
@@ -159,7 +160,7 @@
         app:layout_constraintVertical_bias="0.169" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/section2"
         android:layout_width="134dp"
         android:layout_height="56dp"
         android:layout_marginStart="256dp"
@@ -172,7 +173,7 @@
         app:layout_constraintVertical_bias="0.213" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/section7"
         android:layout_width="134dp"
         android:layout_height="56dp"
         android:layout_marginEnd="24dp"
@@ -183,6 +184,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.298" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="369dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="24dp"
+        android:background="#898989"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371" />
 
     <TextView
         android:id="@+id/textView2"
@@ -233,7 +245,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/SeeAllSections"
         android:layout_width="194dp"
         android:layout_height="48dp"
         android:layout_marginStart="100dp"
@@ -243,11 +255,10 @@
         android:text="10 Sections"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/SeeActiveSection"
         android:layout_width="194dp"
         android:layout_height="48dp"
         android:layout_marginStart="100dp"
